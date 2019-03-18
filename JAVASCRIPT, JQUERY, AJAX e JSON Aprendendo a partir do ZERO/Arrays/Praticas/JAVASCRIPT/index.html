@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript!</title>
+        <link href="styles/main.css" type="text/css" rel="stylesheet"> 
+        <script src="scripts/main.js" type="text/javascript"></script>
+    </head>
+    <body>
+ 
+ <script>
+
+ document.writeln("<h2>Criação do Array</h2>");
+ var color=new Array();
+ color[0]="Azul";
+ color[1]="Vermelho";
+ color[2]="Verde";
+
+ document.writeln("Vetor color: "+color+"<br>");
+ document.writeln(color[0]+"<br>");
+ document.writeln(color[1]+"<br><br><br>");
+
+ var color2=new Array("Amarelo","Verde","Rosa","Preto");
+
+
+ document.writeln("Vetor color2: "+color2+"<br>");
+ document.writeln(color2[0]+"<br>");
+ document.writeln(color2[1]+"<br><br><br>");
+
+ document.writeln("<h2>Tamanho do Array</h2>");
+ var tamanho= color.length;
+document.writeln("O tamanho do vetor color é var tamanho color.length; = "+tamanho+"<br><br>")
+var tamanho2= color2.length;
+document.writeln("O tamanho do vetor color2 é var tamanho2 color2.length; = "+tamanho2+"<br><br>")
+ 
+document.writeln("<h2>Uso do join</h2>");
+
+var arr= new Array();
+arr[0]="Eu";
+arr[1]="sou";
+arr[2]="desenvolvedor";
+
+document.writeln("Sem o uso do join= "+arr+"<br><br>");
+document.writeln("Com o uso do join arr.join(' ')= "+arr.join(" ")+"<br><br>");
+
+document.writeln("<h2>Uso do reverse</h2>");
+var reverse= new Array("A","B","C","D");
+reverse.reverse();
+document.writeln("Uso do reverse ="+reverse+"<br><br><br>");
+reverse.reverse();
+
+document.writeln("<h2>Uso do slice</h2>");
+var sli= new Array("A","B","C","D","E","F","G","H","I","J","K");
+document.writeln(sli+"<br><br>");
+var sl=sli.slice(2,5);
+document.writeln("sli.slice(2,5)= "+sl+"<br><br>");
+ sl=sli.slice(4,7);
+document.writeln("sli.slice(4,7)= "+sl+"<br><br>");
+sl=sli.slice(0,1);
+document.writeln("sli.slice(0,1)= "+sl+"<br><br><br>");
+
+document.writeln("<h2>Uso do sort</h2>");
+
+var arr= new Array("K","P","H","S","W","I","B","C","A","J","D");
+
+document.write("<br><br>Array original letras: "+arr+"<br><br>");
+arr.sort();
+document.write("Arranjo ordenado: "+arr+"<br><br>");
+
+var arr= new Array("Manteiga","Pão","Doce","Café","Copo","Mesa","Cadeira","Faca","Bolo","Leite","Suco");
+
+document.write("<br><br>Array original palavras: "+arr.join(" - ")+"<br><br>");
+arr.sort();
+document.write("Arranjo ordenado: "+arr.join(" - ")+"<br><br>");
+
+var arrN= new Array(100,150,85,70,69,75,20,3,4,1,0,6,9,21,74,93);
+
+
+document.write("<br><br>Array original numeros: "+arrN+"<br><br>");
+arrN.sort(function comparacao(a,b){//necessario para ordenar numeros
+    return a-b;
+});
+document.write("Arranjo ordenado: "+arrN+"<br><br>");
+
+
+document.writeln("<h2>Uso do toString()</h2>");
+
+var arr=new Array("Manteiga","Pão","Doce","Café","Copo","Mesa","Cadeira","Faca","Bolo","Leite","Suco")
+
+document.write("<br><br>Array original palavras para toString(): "+arr.join(" - ")+"<br><br>");
+document.write("to String() ="+arr.toString()+"<br><br>");
+
+ </script>
+    
+    </body>
+</html>
