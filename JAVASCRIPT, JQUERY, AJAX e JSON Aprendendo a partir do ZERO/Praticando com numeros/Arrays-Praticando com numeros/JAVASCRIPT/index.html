@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript!</title>
+        <link href="styles/main.css" type="text/css" rel="stylesheet"> 
+        <script src="scripts/main.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+      <p id="T"></p>
+      <p id="T2"></p>
+      <p id="T3"></p>
+ 
+ <script>
+
+var numero= 11.4;
+
+var xT= document.getElementById("T");
+xT.innerHTML=Math.round(numero);
+document.write("Math.roud -arredonda o numero numero = 11.3 ---  Math.round(numero) o resultado será: 11<br><br>")
+document.write("Math.roud -arredonda o numero numero = 11.7 ---  Math.round(numero) o resultado será: 12<br><br>")
+
+
+var numero2=10.5;
+var xt2=document.getElementById("T2");
+xt2.innerHTML=Math.floor(numero2);
+document.write("Math.floor - arredonda o numero 10.5 para 10 <br>");
+document.write("Math.floor - arredonda o numero 10.7 para 10 <br>");
+document.write("Math.floor - arredonda o numero 10.2 para 10 <br>");
+
+
+var numero3=10.75
+var xt3=document.getElementById("T3");
+xt3.innerHTML=Math.ceil(numero3);
+document.write("Math.ceil - arredonda o numero 10.5 para 11 <br>");
+document.write("Math.ceil - arredonda o numero 10.75 para 11 <br>");
+document.write("Math.ceil - arredonda o numero 10.2 para 11 <br>");
+
+ </script>
+    
+    </body>
+</html>

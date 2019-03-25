@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript!</title>
+        <link href="styles/main.css" type="text/css" rel="stylesheet"> 
+        <script src="scripts/main.js" type="text/javascript"></script>
+    </head>
+    <body >
+ 
+ <p id="P"></p>
+ 
+
+    
+    </body>
+    <script>
+    
+    var hoje= new Date();
+    var m= hoje.getMonth()+1;
+    var d= hoje.getDate();
+    var a=hoje.getYear()+1900;
+    var y=hoje.getFullYear();
+    var h=hoje.getHours();
+    var ms=hoje.getMilliseconds();
+    var mn=hoje.getMinutes();
+    var sg=hoje.getSeconds();
+    var tm=hoje.getTime();
+    var UTCDate=hoje.getUTCDate();
+    var ds=hoje.getDay();
+    
+
+    document.write("Mes "+m+"<br> Data: "+d+"<br> Ano: "+y+"<br> Horas: "+h+"<br> Milisegundos: "+ms+"<br> Minutos:m "+mn+"<br> Segundos: "+sg+"<br>Time: "+tm+"<br> UTCDate: "+UTCDate+"<br> Dia da semana: "+ds+"<br>Ano getYear()+1900: "+a);
+
+    document.write("<br><br>toDateString(): "+hoje.toDateString());
+    document.write("<br>toISOString(): "+hoje.toISOString());
+    document.write("<br>toLocaleDateString(): "+hoje.toLocaleDateString());
+    document.write("<br>toLocaleString(): "+hoje.toLocaleString());
+    document.write("<br>toLocaleTimeString(): "+hoje.toLocaleTimeString());
+    document.write("<br>toString(): "+hoje.toString());
+    document.write("<br>toTimeString()): "+hoje.toTimeString());
+    document.write("<br>toUTCString(): "+hoje.toUTCString());
+  
+
+    var hoje2= new Date();
+    hoje2.setDate(10);
+    document.write("<br> <br> hoje2.setDate(10): "+hoje2.toLocaleDateString());
+    hoje2.setFullYear(2000);
+    document.write("<br> <br> hoje2.setFullYear(2000): "+hoje2.toLocaleDateString());
+    hoje2.setHours(10,20,30);
+    document.write("<br> <br>  hoje2.setHours(10,20,30): "+hoje2.toLocaleString());
+    hoje2.setMonth(6);
+    document.write("<br> <br>  hoje2.setMonth(6): "+hoje2.toLocaleString());
+
+
+
+
+    </script>
+</html>
