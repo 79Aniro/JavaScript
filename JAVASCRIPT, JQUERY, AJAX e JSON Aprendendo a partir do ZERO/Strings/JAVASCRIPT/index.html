@@ -22,69 +22,98 @@
 
  var tamanho= meutexto.length;
  var tamanho2= meutexto2.length;
- document.write("O tamannho do texto: 'Sou desenvolvedor Ionic' é de "+tamanho+" caracteres<br>");
- document.write("O tamannho do texto: 'SoudesenvolvedorIonic' é de "+tamanho2+" caracteres<br>");
+ document.write("O tamannho do texto: 'Sou desenvolvedor Ionic' é de "+tamanho+" caracteres<br><br>");
+ document.write("O tamannho do texto: 'SoudesenvolvedorIonic' é de "+tamanho2+" caracteres<br><br>");
+
+
 
 var caracter=meutexto.charAt(2);
-document.write("O caracter da 2ª posição(.charAt(2)) é o : "+caracter+"<br>");
+document.write("O caracter da 2ª posição(.charAt(2)) é o : "+caracter+"<br><br>");
+
+var caracter=meutexto.charCodeAt(0);
+document.write("O numero do caracter da posição 0 em encode é: meutexto.charCodeAt(0); : "+caracter+"<br><br>");
 
 var g= meutexto.toUpperCase();
-document.write("meutexto.toUpperCase() : "+g+"<br>");
+document.write("meutexto.toUpperCase() : "+g+"<br><br>");
 var h= meutexto.toLocaleUpperCase();
-document.write("meutexto.toLocaleUpperCase : "+h+"<br>");
+document.write("meutexto.toLocaleUpperCase : "+h+"<br><br>");
 
 var i= meutexto.toLowerCase();
-document.write("meutexto.toLowerCase() : "+i+"<br>");
+document.write("meutexto.toLowerCase() : "+i+"<br><br>");
 var j= meutexto.toLocaleLowerCase();
-document.write("meutexto.toLocaleLowerCase() : "+j+"<br>");
+document.write("meutexto.toLocaleLowerCase() : "+j+"<br><br>");
 
 
 
 var texto2="0123456789";
 
-document.write("<br>texto2= "+texto2+"<br>");
+document.write("<br>texto2= "+texto2+"<br><br>");
 
 var s1=texto2.sub();
-document.write("texto2.sub() "+s1+"<br>");
+document.write("texto2.sub() "+s1+"<br><br>");
 
 var s2=texto2.substr(2,6);
-document.write("texto2.substr(2,6) "+s2+"<br>");
+document.write("texto2.substr(2,6) "+s2+"<br><br>");
 
 var s3=texto2.substring(2,6);
-document.write("texto2.substring(2,6) "+s3+"<br>");
+document.write("texto2.substring(2,6) "+s3+"<br><br>");
 
-var texto3="Lorem ipsum dolor sente-se amet, consectetur adipiscing elit. Proin sit.";
-document.write("<br>texto2= "+texto3+"<br>");
+var texto3="Lorem ipsum dolor sente-se amet, consectetur adipiscing elit. Proin sit.Lorem ipsum dolor sente-se amet";
+document.write("<br><br>texto2= "+texto3+"<br><br>");
 var x = document.getElementById("myAnchor").href;
-document.write("var x = document.getElementById('myAnchor').href :"+x+"<br>");
+document.write("var x = document.getElementById('myAnchor').href :"+x+"<br><br>");
 
 
 
 var s4=texto3.big()
-document.write("texto3.big() "+s4+"<br>");
+document.write("texto3.big() "+s4+"<br><br>");
 
 var s5=texto3.blink();
-document.write("texto3.blink() "+s5+"<br>");
+document.write("texto3.blink() "+s5+"<br><br>");
 
 var s6=texto3.bold();
-document.write("texto3.bold() "+s6+"<br>");
+document.write("texto3.bold() "+s6+"<br><br>");
 
 var s7=texto3.replace('consectetur adipiscing elit. Proin sit.','Lorem ipsum dolor sente-se amet');
-document.write("texto3.replace('consectetur adipiscing elit. Proin sit.','Lorem ipsum dolor sente-se amet'); "+s7+"<br>");
+document.write("texto3.replace('consectetur adipiscing elit. Proin sit.','Lorem ipsum dolor sente-se amet'); "+s7+"<br><br>");
 
 var s8=texto3.split(" ");
-document.write("texto3.split() "+s8+"<br>");
-document.write("texto3.split() s8[0] "+s8[0]+"<br>");
+document.write("texto3.split() "+s8+"<br><br>");
+document.write("texto3.split() s8[0] "+s8[0]+"<br><br>");
 
 var s9=texto3.slice(0,10);
-document.write("texto3.slice(0,10) "+s9+"<br>");
+document.write("texto3.slice(0,10) "+s9+"<br><br>");
 
 var s10=texto3.search('a');
-document.write("texto3.search('a'); "+s10+"<br>");
+document.write("texto3.search('a'); "+s10+"<br><br>");
 
 var s11=texto3.repeat(2)
-document.write("texto3.repeat(2); "+s11+"<br>");
+document.write("texto3.repeat(2); "+s11+"<br><br>");
 var s11=texto3.repeat(2)
-document.write("texto3.repeat(2); "+s11+"<br>");
+document.write("texto3.repeat(2); "+s11+"<br><br>");
+
+var s12=texto3.indexOf('dolor');
+document.write("texto3.indexOf('dolor'); "+s12+"<br><br>");
+
+var s13=texto3.lastIndexOf('Lorem');
+document.write("texto3.lastIndexOf('Lorem'); "+s13+"<br><br>");
+
+var s14=texto3.link('https://www.cpad.com.br/');
+
+document.write("texto3.link('https://www.cpad.com.br/'); "+s14+"<br><br>");
+
+
+var s15=texto3.fontcolor("#BEF781");
+document.write('texto3.fontcolor("#BEF781"); '+s15+'<br><br>');
+
+var meutexto4='Eu sou desenvolvedor web';
+
+var arr1=meutexto4.split(' ');
+document.write("<br>"+arr1[0]);
+document.write("<br>"+arr1[1]);
+document.write("<br>"+arr1[2]);
+document.write("<br>"+arr1[3]);
+
+
     </script>
 </html>
