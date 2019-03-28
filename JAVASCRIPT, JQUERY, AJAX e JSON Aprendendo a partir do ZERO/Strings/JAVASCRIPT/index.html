@@ -9,7 +9,9 @@
     <body  >
  
  
- 
+        <a id="myAnchor" href="https://www.w3schools.com">Tutorials</a>
+
+        <p>Click the button to get the URL of the link.</p>
 
     
     </body>
@@ -26,8 +28,63 @@
 var caracter=meutexto.charAt(2);
 document.write("O caracter da 2ª posição(.charAt(2)) é o : "+caracter+"<br>");
 
+var g= meutexto.toUpperCase();
+document.write("meutexto.toUpperCase() : "+g+"<br>");
+var h= meutexto.toLocaleUpperCase();
+document.write("meutexto.toLocaleUpperCase : "+h+"<br>");
+
+var i= meutexto.toLowerCase();
+document.write("meutexto.toLowerCase() : "+i+"<br>");
+var j= meutexto.toLocaleLowerCase();
+document.write("meutexto.toLocaleLowerCase() : "+j+"<br>");
 
 
 
+var texto2="0123456789";
+
+document.write("<br>texto2= "+texto2+"<br>");
+
+var s1=texto2.sub();
+document.write("texto2.sub() "+s1+"<br>");
+
+var s2=texto2.substr(2,6);
+document.write("texto2.substr(2,6) "+s2+"<br>");
+
+var s3=texto2.substring(2,6);
+document.write("texto2.substring(2,6) "+s3+"<br>");
+
+var texto3="Lorem ipsum dolor sente-se amet, consectetur adipiscing elit. Proin sit.";
+document.write("<br>texto2= "+texto3+"<br>");
+var x = document.getElementById("myAnchor").href;
+document.write("var x = document.getElementById('myAnchor').href :"+x+"<br>");
+
+
+
+var s4=texto3.big()
+document.write("texto3.big() "+s4+"<br>");
+
+var s5=texto3.blink();
+document.write("texto3.blink() "+s5+"<br>");
+
+var s6=texto3.bold();
+document.write("texto3.bold() "+s6+"<br>");
+
+var s7=texto3.replace('consectetur adipiscing elit. Proin sit.','Lorem ipsum dolor sente-se amet');
+document.write("texto3.replace('consectetur adipiscing elit. Proin sit.','Lorem ipsum dolor sente-se amet'); "+s7+"<br>");
+
+var s8=texto3.split(" ");
+document.write("texto3.split() "+s8+"<br>");
+document.write("texto3.split() s8[0] "+s8[0]+"<br>");
+
+var s9=texto3.slice(0,10);
+document.write("texto3.slice(0,10) "+s9+"<br>");
+
+var s10=texto3.search('a');
+document.write("texto3.search('a'); "+s10+"<br>");
+
+var s11=texto3.repeat(2)
+document.write("texto3.repeat(2); "+s11+"<br>");
+var s11=texto3.repeat(2)
+document.write("texto3.repeat(2); "+s11+"<br>");
     </script>
 </html>
