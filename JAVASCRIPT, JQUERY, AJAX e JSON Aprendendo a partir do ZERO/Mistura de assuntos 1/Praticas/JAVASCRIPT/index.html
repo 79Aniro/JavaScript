@@ -23,6 +23,16 @@
         <button onclick="fMostrarDados()">Clique Aqui</button>
         <br>
         <p id="visualizar"></p>
+        <p id="help"></p>
+        <p id="help2"></p>
+        <p id="help3"></p>
+        <p id="help4"></p>
+        <p id="help5"></p>
+        <p id="help6"></p>
+
+<br>
+<button onclick="imprimir()">Imprimir</button>
+
         <script>
  
  document.getElementById('exemplo').innerHTML="<b>Ok</b>"
@@ -33,6 +43,44 @@ function fMostrarDados(){
     document.getElementById("visualizar").innerHTML= col[1].innerHTML;
 }
  
+
+ var text1='Ola';
+ var text2=' Mundo';
+
+ document.getElementById("help").innerHTML= text1.concat(text2);
+
+
+ var num =12.635;
+ var str= num.toFixed(2);
+
+ document.getElementById("help2").innerHTML= num+"=> toFixed(2)= "+str;
+
+ var num =12.665;
+ var str= num.toFixed(1);
+
+ document.getElementById("help3").innerHTML= num+"=> toFixed(1)= "+str;
+
+
+ var d= new Date(2018,10,10);
+
+document.getElementById("help4").innerHTML=d
+
+
+var num1=100;
+var num2=-100;
+
+document.getElementById("help5").innerHTML=num1+" / "+num2+" Math.abs(num1)  Math.abs(num2) "+ Math.abs(num1)+" "+Math.abs(num2)
+
+function imprimir(){
+
+    this.print();
+}
+
+var a=screen.width;
+var b=screen.height;
+
+document.getElementById("help6").innerHTML= a+" "+b;
+
  </script>
     </body>
 </html>
