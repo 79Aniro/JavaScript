@@ -8,23 +8,36 @@
     </head>
     <body>
 
-<form name="meuform" method="get" onsubmit="alert('ok')">
+        <form name="meuform" method="get" onsubmit="alert('ok')">
 
-    <input type="text" id="txtNome" placeholder="Nome"> 
-    <input type="text" id="txtTelefone" placeholder="Telefone"> 
-    <input type="radio" value="op1">
-    <input type="checkbox" value="op2">
+            <input type="text" id="txtNome" placeholder="Nome"><br><br>
+            <input type="text" id="txtTelefone" placeholder="Telefone"> <br><br>
+            <input type="radio" name="radio" value="op1"><br><br>
+            <input type="checkbox" name="checkbox" value="op2"><br><br>
+            <select name="select"><br><br>
 
-    <br>
-    <br>
-    <input type="submit" id="enviar">
-    <br>
-    <br>
-    <input type="reset" id="cancelar" name="Cancelar" >
+            </select>
+            <textarea name="area"> </textarea><br><br>
+
+            <br>
+            <br>
+            <input type="submit" id="enviar" value="Submit" name="Submit">
+            <br>
+            <br>
+            <input type="reset" id="cancelar" name="Cancelar" value="Cancelar">
+
+            <script>
+
+            document.write("<br><br>Resultado do primeiro elemento: "+document.meuform.txtNome.type+ "<br>");
+            document.write("<br>Resultado do segundo elemento: "+document.meuform.txtTelefone.type+ "<br>");
+            document.write("<br>Resultado do terceiro elemento: "+document.meuform.radio.value+ "<br>");
+            document.write("<br>Resultado do quarto elemento: "+document.meuform.checkbox.value+ "<br>");
+            document.write("<br>Resultado do quinto elemento: "+document.meuform.elements["select"].nodeName+ "<br>");
+        
+        </script>
+        </form>
 
 
-</form>
 
-       
     </body>
 </html>
